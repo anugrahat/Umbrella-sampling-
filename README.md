@@ -40,7 +40,7 @@ Here's a step-by-step guide for submitting and running the umbrella sampling and
    - Use `submit_all_extras.sh` or `submit_all_umbrella.sh` to submit jobs for all configurations.
    
    ```bash
-   bash submit_all_umbrella.sh
+   sbatch submit_all_umbrella.sh
    ```
 
 2. **Monitor the progress of the submitted jobs:**
