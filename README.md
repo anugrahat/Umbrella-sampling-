@@ -83,7 +83,7 @@ Here's a step-by-step guide for submitting and running the umbrella sampling and
   1. `extract.sh` (via `sbatch`)
   2. `sampling.py` (via Python)
   3. `sampling_1extras.py` or `sampling2.py` (via Python)
-  4. `submit_all_extras.sh` or `submit_all_umbrella.sh` (via Bash)
+  4. `submit_all_extras.sh` or `submit_all_umbrella.sh` (via sbatch)
   5. `wham.py` or `wham2.py` (via Python)
   6. `wham.sh` (via `sbatch`)
   7. Visualize results with `histo.py` (via Python).
