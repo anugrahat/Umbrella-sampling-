@@ -1,15 +1,15 @@
 #!/bin/bash
-
-#SBATCH --job-name=md1                 # Job name
-#SBATCH --account=ahnlab               # Account name
-#SBATCH --partition=gpu-ahn            # Partition name
-#SBATCH --nodes=1                      # Number of nodes
-#SBATCH --ntasks-per-node=1            # Number of tasks per node (usually 1 for GPU jobs)
-#SBATCH --cpus-per-task=64             # Number of CPU cores per task (adjust if needed, but <= 64 for GROMACS recommendation)
-#SBATCH --gres=gpu:0                   # Request 1 GPU
-#SBATCH --time=250:00:00               # Time limit hrs:min:sec
-#SBATCH --mail-type=BEGIN,END          # Send email at start and end of job
-#SBATCH --mail-user=anuthyagatur@ucdavis.edu # Your email address
+#SBATCH --job-name="combined_cmd_gamd"
+#SBATCH --output="combined_cmd_gamd.%j.%N.out"
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=50G
+#SBATCH --account= #enter account#
+#SBATCH --partition=#enter partition name#
+#SBATCH --no-requeue
+#SBATCH --mail-type=ALL
+#SBATCH -t 360:00:00
 
 # Load GROMACS module
 module load gromacs/2024
