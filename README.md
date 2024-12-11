@@ -38,10 +38,7 @@ Here's a step-by-step guide for submitting and running the umbrella sampling and
 ### **Step 4: Submit Umbrella Sampling Simulations**
 1. **Submit batch jobs for the simulations:**
    - Use `submit_all_extras.sh` or `submit_all_umbrella.sh` to submit jobs for all configurations.
-   ```bash
-   bash submit_all_extras.sh
-   ```
-   or
+   
    ```bash
    bash submit_all_umbrella.sh
    ```
