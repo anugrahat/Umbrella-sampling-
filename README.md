@@ -24,7 +24,7 @@ Here's a step-by-step guide for submitting and running the umbrella sampling and
 ---
 
 ### **Step 3: Generate Configuration Files**
-1. **Run `sampling_1extras.py` or `sampling2.py`:**
+1. **Run `sampling2.py`:**
    - These scripts set up configuration directories, copy necessary files, and create submission scripts (`srun_pull.sh` and `srun_umbrella.sh`) for each frame.
    ```bash
    python sampling_1extras.py
