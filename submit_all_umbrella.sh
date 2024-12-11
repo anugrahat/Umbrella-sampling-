@@ -8,7 +8,6 @@
 #SBATCH --account= #enter account#
 #SBATCH --partition=#enter partition name#
 #SBATCH --no-requeue
-#SBATCH --mail-user=tchettri@ucdavis.edu
 #SBATCH --mail-type=ALL
 #SBATCH -t 360:00:00
 
