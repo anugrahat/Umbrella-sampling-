@@ -60,13 +60,11 @@ def createSrunScripts(frame_name, output_dir):
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=50G
-#SBATCH --account=ahnlab
-#SBATCH --partition=gpu-ahn
+#SBATCH --account= #enter account#
+#SBATCH --partition=#enter partition name#
 #SBATCH --no-requeue
-#SBATCH --mail-user=tchettri@ucdavis.edu
 #SBATCH --mail-type=ALL
 #SBATCH -t 360:00:00
-
 module load cuda/11.8.0
 
 module load gromacs/2024
@@ -81,10 +79,9 @@ srun gmx_mpi mdrun -deffnm npt{frame_name[4:]} -nb gpu -bonded gpu """
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=50G
-#SBATCH --account=ahnlab
-#SBATCH --partition=gpu-ahn
+#SBATCH --account= #enter account#
+#SBATCH --partition=#enter partition name#
 #SBATCH --no-requeue
-#SBATCH --mail-user=tchettri@ucdavis.edu
 #SBATCH --mail-type=ALL
 #SBATCH -t 360:00:00
 
