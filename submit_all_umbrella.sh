@@ -5,8 +5,8 @@
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=50G
-#SBATCH --account=ahnlab
-#SBATCH --partition=gpu-ahn
+#SBATCH --account= #enter account#
+#SBATCH --partition=#enter partition name#
 #SBATCH --no-requeue
 #SBATCH --mail-user=tchettri@ucdavis.edu
 #SBATCH --mail-type=ALL
